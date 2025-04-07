@@ -138,10 +138,7 @@ export default function HomePage() {
 
   return (
     <div className="container">
-      <h2>🕒 {auth.currentUser.email} 的工時紀錄</h2>
-      <div style={{ backgroundColor: '#ffa500', padding: '12px', borderRadius: '8px', marginBottom: '16px', textAlign: 'center', fontWeight: 'bold' }}>
-  🚀 已啟用自動部署（這是測試訊息）
-</div>
+      <h2>🕒 {auth.currentUser.email} 的工時紀錄5555</h2>
 
       <button onClick={logout}>🚪 登出</button>
       <br /><br />
