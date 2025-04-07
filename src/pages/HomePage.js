@@ -1,4 +1,3 @@
-import ThemeToggle from "../ThemeToggle";
 import React, { useState, useEffect } from "react";
 import { auth, db } from "../firebase";
 import {
@@ -139,7 +138,6 @@ export default function HomePage() {
 
   return (
     <div className="container">
-      <ThemeToggle />
       <h2>🕒 {auth.currentUser.email} 的工時紀錄</h2>
 
       <button onClick={logout}>🚪 登出</button>
