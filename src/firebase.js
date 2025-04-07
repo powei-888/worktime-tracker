@@ -3,17 +3,17 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 
-
+// 🔐 從環境變數讀取金鑰
 const firebaseConfig = {
-  apiKey: "AIzaSyCeUfHgqmYTnFtvdo3JZEyalzkbIe0sBe4",
-  authDomain: "webapp-2af5e.firebaseapp.com",
-  projectId: "webapp-2af5e",
-  storageBucket: "webapp-2af5e.firebasestorage.app",
-  messagingSenderId: "201976852154",
-  appId: "1:201976852154:web:464c9b630685c1f0f19c83"
+  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_FIREBASE_APP_ID,
 };
 
 const app = initializeApp(firebaseConfig);
-// ✅ 這一行很重要！你一定要有這個匯出 Firestore 才能用
 export const db = getFirestore(app);
 export const auth = getAuth(app);
+
