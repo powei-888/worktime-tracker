@@ -28,6 +28,7 @@ export default function HomePage() {
       fetchRecords(selectedMonth);
       loadAllMonths();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedMonth, uid]);
 
   const handleSubmit = async () => {
