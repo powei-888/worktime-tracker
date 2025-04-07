@@ -140,7 +140,7 @@ export default function HomePage() {
   return (
     <div className="container">
       <h2>🕒 {auth.currentUser.email} 的工時紀錄</h2>
-      <p>🚀 自動部署測試成功！</p>
+
 
 
       <button onClick={logout}>🚪 登出</button>
