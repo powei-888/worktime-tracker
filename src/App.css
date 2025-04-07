@@ -57,13 +57,38 @@ button:hover {
   gap: 10px;
 }
 
-@media (max-width: 480px) {
-  .record {
-    font-size: 14px;
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .container {
+    padding: 20px;
+    margin: 10px;
+    max-width: 100%;
+    border-radius: 12px;
+  }
+
+  input[type="date"],
+  input[type="number"] {
+    font-size: 16px;
+    padding: 10px;
   }
 
   button {
-    font-size: 12px;
-    padding: 6px 12px;
+    font-size: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+  }
+
+  .record {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .record-buttons {
+    flex-direction: column;
+    gap: 6px;
   }
 }
