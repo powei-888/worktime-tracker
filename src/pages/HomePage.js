@@ -138,7 +138,7 @@ export default function HomePage() {
 
   return (
     <div className="container">
-      <h2>🕒 {auth.currentUser.email} 的工時紀錄5555</h2>
+      <h2>🕒 {auth.currentUser.email} 的工時紀錄</h2>
 
       <button onClick={logout}>🚪 登出</button>
       <br /><br />
